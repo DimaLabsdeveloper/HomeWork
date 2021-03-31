@@ -1,16 +1,18 @@
-def NOD(a,b):
+def NOK(a,b):
     
+    m = a * b
     while a != 0 and b != 0:
         if a > b:
-            a = a % b
+            a %= b
         else:
-            b = b % a
-    
-    print("НОД:",a + b)
+            b %= a
+    return m // (a + b)
+ 
+ 
 while True:
     
         x = int(input('a = '))
         y = int(input('b = '))
-        NOD(x, y)
+        print('НОК:', NOK(x, y))
    
         break
