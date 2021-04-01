@@ -7,10 +7,9 @@ def NOD(a,b):
             b = b % a
     
     print("НОД:",a + b)
-while True:
     
-        x = int(input('a = '))
-        y = int(input('b = '))
-        NOD(x, y)
-   
-        break
+    x = int(input('a = '))
+    y = int(input('b = '))
+    NOD(x, y)
+
+    
